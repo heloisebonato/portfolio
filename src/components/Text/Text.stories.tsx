@@ -10,7 +10,7 @@ export default {
     },
     argTypes: {
         size: {
-            options: ['sm', 'md', 'lg'],
+            options: ['sm', 'md', 'lg', 'xl'],
             control: {
                 type: 'inline-radio'
             }
@@ -31,6 +31,12 @@ export const Small: StoryObj<TextProps> = {
 export const Large: StoryObj<TextProps> = {
     args: {
         size: 'lg'
+    }
+}
+
+export const ExtraLarge: StoryObj<TextProps> = {
+    args: {
+        size: 'xl'
     }
 }
 
